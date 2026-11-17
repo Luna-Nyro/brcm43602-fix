@@ -1,0 +1,12 @@
+[Unit]
+Description=brcm43602-fix first-boot failsafe (revert the Wi-Fi firmware files if there is no network)
+ConditionPathExists=/var/lib/brcm43602-fix/trial
+After=multi-user.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/lib/brcm43602-fix/brcm-fw-failsafe.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target

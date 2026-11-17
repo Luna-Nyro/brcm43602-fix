@@ -1,0 +1,27 @@
+# Local working data: Apple package cache and extracted kexts (Apple-copyrighted), SROM dumps
+# (contain the card's MAC address), generated NVRAMs and lab results. Never commit these.
+work/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / OS
+*~
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+# Logs and dumps
+*.log
+*.bin
+*.sparse
+
+# Local publishing notes
+PREP-REPORT.md
+
+# Legal-review bundle (contains private data; never commit)
+review.tgz
